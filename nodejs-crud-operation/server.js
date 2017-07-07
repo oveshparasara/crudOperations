@@ -39,11 +39,8 @@ app.put('/quotes', (req, res) => {
 })
 })
 
-
-
 const MongoClient = require('mongodb').MongoClient
 var db
-
 MongoClient.connect('mongodb://node_crud:node_crud@ds151242.mlab.com:51242/node_crud', (err, database) => {
     if (err) return console.log(err)
     db = database
